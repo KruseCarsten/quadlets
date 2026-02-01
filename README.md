@@ -8,7 +8,7 @@
 
 
 <script>
-import traefik from '/docs/traefik/traefik.md'
+import traefik from './docs/traefik/traefik.md'
 </script>
 
 
@@ -46,7 +46,9 @@ sudo sysctl --system
 
 ## Setup Proxy-Server - Traefik
 
-{{traefik}}
+{{ traefik }}
+
+<!--@include:./docs/traefik/traefik.md-->
 
 # License
 This repository is licensed under the [unlicense](LICENSE).
