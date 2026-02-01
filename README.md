@@ -4,6 +4,7 @@
   - [Prepare](#prepare)
     - [Configure *ip\_unprivileged\_port\_start*](#configure-ip_unprivileged_port_start)
   - [Setup Proxy-Server - Traefik](#setup-proxy-server---traefik)
+- [License](#license)
 
 # Quadlets
 Home Lab - Podman Systemd Quadlets
@@ -39,5 +40,8 @@ sudo sysctl --system
 
 ## Setup Proxy-Server - Traefik
 
+<!--@include:/docs/traefik/traefik.md-->
 
+# License
+This repository is licensed under the [unlicense](LICENSE).
 
