@@ -50,6 +50,8 @@ sudo sysctl --system
 
 <!--@include:./docs/traefik/traefik.md-->
 
+{: include ./docs/traefik/traefik.md }
+
 # License
 This repository is licensed under the [unlicense](LICENSE).
 
