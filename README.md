@@ -6,6 +6,12 @@
   - [Setup Proxy-Server - Traefik](#setup-proxy-server---traefik)
 - [License](#license)
 
+
+<script>
+import traefik from '/docs/traefik/traefik.md'
+</script>
+
+
 # Quadlets
 Home Lab - Podman Systemd Quadlets
 
@@ -40,7 +46,7 @@ sudo sysctl --system
 
 ## Setup Proxy-Server - Traefik
 
-<!--@include:/docs/traefik/traefik.md-->
+{{traefik}}
 
 # License
 This repository is licensed under the [unlicense](LICENSE).
