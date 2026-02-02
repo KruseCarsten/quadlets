@@ -60,7 +60,7 @@ Services
     - Proxy-Server [Traefik](./docs/traefik/traefik.md)
   - Services
 
-{% capture my_traefik %}{% include_relative /docs/traefik/traefik.md %}{% endcapture %}
+{% capture my_traefik %}{% include /docs/traefik/traefik.md %}{% endcapture %}
 {{ my_traefik | markdownify }}
 
 # License
