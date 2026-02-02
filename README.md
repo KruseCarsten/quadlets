@@ -1,15 +1,25 @@
 # Content <!-- omit in toc -->
-- [Quadlets](#quadlets)
-  - [Requirements](#requirements)
-  - [Prepare](#prepare)
-    - [Configure *ip\_unprivileged\_port\_start*](#configure-ip_unprivileged_port_start)
-  - [Server Setup - Quadlets](#server-setup---quadlets)
-- [License](#license)
+{:toc}
 
 
 <script>
 import traefik from './docs/traefik/traefik.md'
 </script>
+
+
+## Information
+
+### Arbeitsverzeichnisse
+
+Für rootful:
+
+- Quadlets: /etc/containers/systemd
+- Volumes: /var/lib/containers/storage/volumes
+
+Für rootless:
+
+- Quadlets: ~/.config/containers/systemd
+- Volumes: ~/.local/share/containers/storage/volumes
 
 
 # Quadlets
@@ -20,6 +30,12 @@ This home lab uses podman.
 
 - v4.4.0 or later required for quadlets
 - v5.3.0 or later recommended for dns
+
+
+System with installed systemd-containter package to switch to different user.
+
+- systemd-container
+
 
 ## Prepare
 
@@ -55,10 +71,10 @@ sudo useradd srv_service
 
 Services
 
-  - Basics
-    - Dynamic DNS [DuckDns](./docs/duckdns/duckdns.md)
-    - Proxy-Server [Traefik](./docs/traefik/traefik.md)
-  - Services
+- Basics
+  - Dynamic DNS [DuckDns](./docs/duckdns/duckdns.md)
+  - Proxy-Server [Traefik](./docs/traefik/traefik.md)
+- Services
 
 {% capture my_traefik %}{% include /docs/traefik/traefik.md %}{% endcapture %}
 {{ my_traefik | markdownify }}
