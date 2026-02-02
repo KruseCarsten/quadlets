@@ -8,7 +8,7 @@
 
 
 <script>
-import traefik from '/docs/traefik/traefik.md'
+import traefik from './docs/traefik/traefik.md'
 </script>
 
 
@@ -59,7 +59,6 @@ Services
     - Dynamic DNS [DuckDns](./docs/duckdns/duckdns.md)
     - Proxy-Server [Traefik](./docs/traefik/traefik.md)
   - Services
-
 
 # License
 This repository is licensed under the [unlicense](LICENSE).
