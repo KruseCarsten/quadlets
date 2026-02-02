@@ -3,7 +3,7 @@
   - [Requirements](#requirements)
   - [Prepare](#prepare)
     - [Configure *ip\_unprivileged\_port\_start*](#configure-ip_unprivileged_port_start)
-  - [Setup Proxy-Server - Traefik](#setup-proxy-server---traefik)
+  - [Server Setup - Quadlets](#server-setup---quadlets)
 - [License](#license)
 
 
@@ -44,9 +44,22 @@ and reload the configuration
 sudo sysctl --system
 ```
 
-## Setup Proxy-Server - Traefik
+Create a new user, e.g. *srv_service*
 
-{{traefik}}
+```shell
+sudo useradd srv_service
+```
+
+
+## Server Setup - Quadlets 
+
+Services
+
+  - Basics
+    - Dynamic DNS [DuckDns](./docs/duckdns/duckdns.md)
+    - Proxy-Server [Traefik](./docs/traefik/traefik.md)
+  - Services
+
 
 # License
 This repository is licensed under the [unlicense](LICENSE).
